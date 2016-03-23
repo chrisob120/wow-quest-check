@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Do not enable rewriting for files or directories that exist
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# For requests that are not actual files or directories,
+# Rewrite to index.php/URL
+RewriteCond $1 !^(index\.php|images|styles|ro­bots\.txt)
+RewriteRule ^(.*)$ index.php/$1 [PT,L]

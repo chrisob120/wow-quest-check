@@ -230,6 +230,3 @@ pip-log.txt
 #Ignore the db and config files:
 application/config/database.php
 application/config/config.php
-
-#Ignore main php file for enviroment customization
-index.php

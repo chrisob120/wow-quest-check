@@ -1,0 +1,1 @@
+<div class="block">Right Aside</div>
